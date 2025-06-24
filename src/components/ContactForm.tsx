@@ -116,7 +116,7 @@ This lead was submitted on ${new Date().toLocaleString()}.
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Service Area</h4>
-                  <p className="text-gray-600">Greater Los Angeles & Orange County</p>
+                  <p className="text-gray-600">Nationwide Service</p>
                 </div>
               </div>
 

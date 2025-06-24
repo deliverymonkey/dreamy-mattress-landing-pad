@@ -13,7 +13,7 @@ const Footer = () => {
               <Logo className="h-12 brightness-0 invert" />
             </div>
             <p className="text-gray-300 mb-6 max-w-md">
-              Premium white glove mattress delivery service serving the Greater Los Angeles area. 
+              Premium white glove mattress delivery service serving nationwide. 
               We handle everything from delivery to setup with professional care and attention to detail.
             </p>
             <div className="flex space-x-4">
@@ -46,7 +46,7 @@ const Footer = () => {
             <div className="space-y-4 text-gray-300">
               <div className="flex items-center">
                 <MapPin className="h-5 w-5 mr-3 text-blue-400" />
-                <span>Greater LA & Orange County</span>
+                <span>Nationwide Service</span>
               </div>
               <div className="flex items-center">
                 <Phone className="h-5 w-5 mr-3 text-blue-400" />

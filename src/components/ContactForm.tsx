@@ -30,7 +30,7 @@ const ContactForm = () => {
     try {
       // Simulate form submission to email service
       const emailData = {
-        to: "mikeinsidela@gmail.com",
+        to: "info@mattressdelivery.com",
         subject: "New Mattress Delivery Lead from Website",
         body: `
 New lead from Mattress Delivery Group website:
@@ -96,7 +96,7 @@ This lead was submitted on ${new Date().toLocaleString()}.
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Call Us</h4>
-                  <p className="text-gray-600">(555) 123-4567</p>
+                  <p className="text-gray-600">(747) 266-0110</p>
                 </div>
               </div>
 
@@ -106,7 +106,7 @@ This lead was submitted on ${new Date().toLocaleString()}.
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Email Us</h4>
-                  <p className="text-gray-600">info@mattressdeliverygroup.com</p>
+                  <p className="text-gray-600">info@mattressdelivery.com</p>
                 </div>
               </div>
 

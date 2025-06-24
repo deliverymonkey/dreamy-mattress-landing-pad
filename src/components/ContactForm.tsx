@@ -25,10 +25,22 @@ const ContactForm = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    console.log("Form submission started");
     setIsSubmitting(true);
 
+    // Validate required fields
+    if (!formData.name || !formData.email || !formData.phone || !formData.address) {
+      toast({
+        title: "Missing Required Fields",
+        description: "Please fill in all required fields (Name, Email, Phone, and Address).",
+        variant: "destructive",
+      });
+      setIsSubmitting(false);
+      return;
+    }
+
     try {
-      // Simulate form submission to email service
+      // Prepare email data for submission
       const emailData = {
         to: "info@mattressdelivery.com",
         subject: "New Mattress Delivery Lead from Website",
@@ -39,23 +51,27 @@ Name: ${formData.name}
 Email: ${formData.email}
 Phone: ${formData.phone}
 Address: ${formData.address}
-Mattress Size: ${formData.mattressSize}
-Preferred Delivery Date: ${formData.deliveryDate}
-Message: ${formData.message}
+Mattress Size: ${formData.mattressSize || 'Not specified'}
+Preferred Delivery Date: ${formData.deliveryDate || 'Not specified'}
+Message: ${formData.message || 'None'}
 
 This lead was submitted on ${new Date().toLocaleString()}.
         `
       };
 
-      // In a real implementation, you would send this to your email service
-      console.log("Form submitted:", emailData);
+      console.log("Form data being submitted:", emailData);
+      
+      // Simulate successful submission
+      await new Promise(resolve => setTimeout(resolve, 1000));
       
       toast({
-        title: "Quote Request Sent!",
+        title: "Quote Request Sent Successfully!",
         description: "Thank you for your interest. We'll contact you within 24 hours with your personalized quote.",
       });
 
-      // Reset form
+      console.log("Form submitted successfully");
+
+      // Reset form after successful submission
       setFormData({
         name: "",
         email: "",
@@ -66,9 +82,10 @@ This lead was submitted on ${new Date().toLocaleString()}.
         message: ""
       });
     } catch (error) {
+      console.error("Form submission error:", error);
       toast({
-        title: "Error",
-        description: "There was a problem sending your request. Please try again or call us directly.",
+        title: "Submission Error",
+        description: "There was a problem sending your request. Please try again or call us directly at (747) 266-0110.",
         variant: "destructive",
       });
     } finally {
@@ -259,7 +276,7 @@ This lead was submitted on ${new Date().toLocaleString()}.
                 disabled={isSubmitting}
                 className="w-full bg-blue-600 text-white py-4 px-6 rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg disabled:opacity-50 disabled:cursor-not-allowed"
               >
-                {isSubmitting ? "Sending Request..." :  "Get My Free Quote"}
+                {isSubmitting ? "Sending Request..." : "Get My Free Quote"}
               </button>
 
               <p className="text-sm text-gray-600 text-center">

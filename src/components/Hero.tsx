@@ -51,10 +51,10 @@ const Hero = () => {
                 Get Free Quote
               </a>
               <a
-                href="tel:7472660110"
+                href="tel:2139807171"
                 className="border-2 border-blue-600 text-blue-600 px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors font-semibold text-lg text-center"
               >
-                Call Now: (747) 266-0110
+                Call Now: (213) 980-7171
               </a>
             </div>
           </div>

@@ -85,7 +85,7 @@ This lead was submitted on ${new Date().toLocaleString()}.
       console.error("Form submission error:", error);
       toast({
         title: "Submission Error",
-        description: "There was a problem sending your request. Please try again or call us directly at (747) 266-0110.",
+        description: "There was a problem sending your request. Please try again or call us directly at (213) 980-7171.",
         variant: "destructive",
       });
     } finally {
@@ -113,7 +113,7 @@ This lead was submitted on ${new Date().toLocaleString()}.
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900">Call Us</h4>
-                  <p className="text-gray-600">(747) 266-0110</p>
+                  <p className="text-gray-600">(213) 980-7171</p>
                 </div>
               </div>
 

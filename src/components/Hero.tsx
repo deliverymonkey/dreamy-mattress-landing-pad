@@ -65,7 +65,7 @@ const Hero = () => {
               <img
                 src="/lovable-uploads/feebaba1-d07d-404e-9772-3a59b81b332d.png"
                 alt="Professional mattress delivery service team"
-                className="w-full h-48 lg:h-64 object-cover rounded-xl"
+                className="w-full object-contain rounded-xl"
               />
               
               {/* Floating testimonial card */}

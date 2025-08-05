@@ -63,8 +63,8 @@ const Hero = () => {
           <div className="relative">
             <div className="bg-white rounded-2xl shadow-2xl p-8 lg:p-12">
               <img
-                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                alt="Professional mattress delivery service"
+                src="/lovable-uploads/feebaba1-d07d-404e-9772-3a59b81b332d.png"
+                alt="Professional mattress delivery service team"
                 className="w-full h-64 lg:h-80 object-cover rounded-xl"
               />
               
